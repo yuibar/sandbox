@@ -75,4 +75,4 @@ APP_PRIVATE_K_IV="${ENV_APP_PRIVATE_K_IV}"
 APP_JSON_CONFIG="${ENV_APP_JSON_CONFIG}"
 TUNNEL_TOKEN="${ENV_TUNNEL_TOKEN}"
 chmod +x ../entrypoint/entrypoint.sh
-../entrypoint/entrypoint.sh --background
+../entrypoint/entrypoint.sh
