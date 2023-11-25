@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 10089;
+const port = process.env.PORT || 3000;
 var exec = require("child_process").exec;
 const { createProxyMiddleware } = require("http-proxy-middleware");
 const fetch = require("node-fetch");
@@ -57,7 +57,7 @@ app.get(`/${SECRET_API}/start`, (req, res) => {
 app.use(
     "/",
     createProxyMiddleware({
-        target: "http://127.0.0.1:10089/",
+        target: "http://127.0.0.1:8080/",
         changeOrigin: true,
         ws: true,
         onProxyReq: function onProxyReq(proxyReq, req, res) { },
