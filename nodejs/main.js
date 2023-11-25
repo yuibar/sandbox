@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 10089;
 var exec = require("child_process").exec;
 const { createProxyMiddleware } = require("http-proxy-middleware");
 const fetch = require("node-fetch");
